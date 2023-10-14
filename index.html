@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet'>
+    <title>RNN</title>
+    <style>
+        body {
+            background-image: url('https://images2.alphacoders.com/113/1139745.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+#navbar {
+            background-color: #ff00ff80;
+            padding: 10px 0;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left:0;
+        }
+
+        #navbar h2 {
+            margin: 0;
+            color: white;
+        }
+
+
+#container {
+    width:500px;
+    background-image: url('https://assets-global.website-files.com/6009ec8cda7f305645c9d91b/61ddb7a1c5913087a6003f40_1990s-sites-blog_011022%202.jpg');
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    border-radius: 10px;
+}
+
+h1 {
+    font-family: Dosis;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+label {
+    font-family: Dosis;
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="file"] {
+    font-family: Dosis;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    font-family: Dosis;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    </style>
+</head>
+<body>
+    <div  style="font-family: Dosis;" id="navbar">
+        <h2>SalesProphet</h2>
+    </div>
+    <div id="container">
+        <h1 style="font-family: Dosis;">SALES PREDICTOR</h1>
+        <form method="post" action="/Rating_Prediction" enctype="multipart/form-data">
+            <label for="file">Drop Reviews</label>
+            <input type="file" id="file" name="file">
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
